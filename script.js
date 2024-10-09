@@ -26,11 +26,31 @@ window.onscroll = () => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
+            sec.classList.add('show-animate');
         }
+        else{
+            sec.classList.remove('show-animate');
+        }
+
     });
 
 //sticky header
     let header=document.querySelector('header');
     header.classList.toggle('sticky',window.scrollY > 100);
-
+    
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+}
+function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "ayesha.sylhet720@gmail.com",
+        Password : "01706639392akon720",
+        To : 'ayesha.sylhet720@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
 }
