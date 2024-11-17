@@ -175,7 +175,7 @@ text-align: justify;
 }
 .home-content .text-animate{
     position: relative;
-    width: 32.8rem;
+    width: 48.8rem;
 }
 .home-content .text-animate h3{
     font-size: 3.2rem;
@@ -266,7 +266,7 @@ text-align: justify;
     bottom:4rem;
     width:170px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     left:200px;
 }
 .home-sci a{
@@ -283,6 +283,7 @@ text-align: justify;
     color: var(--text-color);
     z-index:1;
     overflow:hidden;
+    margin-left: 10px;
 
 }
 .home-sci a:hover{
